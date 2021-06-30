@@ -8,3 +8,7 @@ A project looking at quantum oscillations in the absence of a fermi surface. Sta
  <p align="center">
   <img width="700" src="https://user-images.githubusercontent.com/2063944/123663116-60df1b80-d836-11eb-80db-aaeba0d72d8c.png">
 </p>
+
+
+## Resources
+[kwant](https://kwant-project.org/about)
