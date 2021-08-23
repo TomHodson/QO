@@ -1,0 +1,23 @@
+# YAML 1.2
+---
+abstract: "A software project looking at quantum oscillations in the absence of a fermi surface."
+authors: 
+  -
+    affiliation: "Blackett Laboratory, Imperial College London, London SW7 2AZ, United Kingdom"
+    family-names: Hodson
+    given-names: Thomas
+    orcid: "https://orcid.org/0000-0002-4121-4772"
+  -
+    affiliation: "Department of Physics TQM, Technische Universität München, James-Franck-Straße 1, D-85748 Garching, Germany"
+    family-names: Leeb
+    given-names: Valentin
+    orcid: "https://orcid.org/0000-0002-7099-0682"
+cff-version: "1.1.0"
+keywords: 
+  - "Quantum Oscillations"
+license: "CC-BY-NC-4.0"
+message: "If you use this software, please cite it using the metadata in this file."
+repository-code: "https://github.com/TomHodson/QO"
+title: "Anomalous Quantum Oscillations"
+version: "0.1"
+...
