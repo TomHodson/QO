@@ -32,7 +32,7 @@ def k_space_H(t, k, L, **kwargs):
     
     return H
 
-def eigs_over_k(hamiltonian, N, t, k, **kwargs):
+def eigs_over_k(hamiltonian, N, t, **kwargs):
     """
     This version works for hamiltionians of arbitary shape
     """
@@ -48,3 +48,15 @@ def eigs_over_k(hamiltonian, N, t, k, **kwargs):
             eigs[i, j] = eigvalsh(H)
             
     return eigs.flatten()
+
+def lattice_dispersion(kx, ky, t = vec2(1,1)): return - 2 * t.x * np.cos(kx) - 2 * t.y * np.cos(ky) 
+
+def FS_area(dispersion, N, E):
+    kx = np.linspace(-np.pi, np.pi, N.x)[:, None]
+    ky = np.linspace(-np.pi, np.pi, N.y)[None, :]
+    sampled_dispersion = dispersion(kx, ky)
+    
+    number_of_states_less_than_E = np.array([np.sum(e > sampled_dispersion) for e in np.atleast_1d(E)])
+    areas = number_of_states_less_than_E / (N.x * N.y)
+    
+    return areas
