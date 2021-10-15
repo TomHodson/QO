@@ -1,3 +1,7 @@
+#images
+*.png 
+*.gif
+
 # Mac stuff
 .DS_Store
 
